@@ -1,9 +1,3 @@
---SELECT * FROM organization.Departments
---SELECT * FROM organization.Roles
---SELECT * FROM organization.Employees
---SELECT * FROM organization.Projects
---SELECT * FROM organization.Tasks
-
 --Task1
 WITH RECURSIVE employee_hierarchy AS (
 SELECT 		e.employeeid, e.name, e.managerid, e.departmentid, e.roleid

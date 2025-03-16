@@ -29,5 +29,3 @@ WHERE 		1 = 1
 			AND b.price < 4000
 ORDER BY 	horsepower DESC NULLS LAST ;
 
-
-SELECT * FROM vehicle   
