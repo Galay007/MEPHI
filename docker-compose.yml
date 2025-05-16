@@ -1,0 +1,53 @@
+services:
+  otpservice:
+    image: otp_backend
+    container_name: otp_backend
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    environment:
+      DB_URL: jdbc:postgresql://otp_db:5432/otp_service
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+    depends_on:
+      - postgres
+    networks:
+      - otp-network
+  postgres:
+    image: postgres:15
+    container_name: otp_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: otp_service
+    volumes:
+      - otp_data:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U admin -d otp_service" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 4G
+    networks:
+      - otp-network
+volumes:
+  otp_data:
+
+networks:
+  otp-network:
+    driver: bridge
