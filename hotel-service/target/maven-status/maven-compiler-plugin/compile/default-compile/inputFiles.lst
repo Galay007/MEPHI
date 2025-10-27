@@ -1,0 +1,15 @@
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\config\OpenApiConfig.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\HotelServiceApplication.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\model\Hotel.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\model\Room.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\model\RoomReservationLock.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\repo\HotelRepository.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\repo\RoomRepository.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\repo\RoomReservationLockRepository.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\security\JwtSecretKeyProvider.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\security\SecurityConfig.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\service\HotelService.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\web\CorrelationFilter.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\web\HotelController.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\web\RoomController.java
+C:\Документы\МИФИ\Spring\HotelBooking\hotel-service\src\main\java\com\example\hotel\web\StatsController.java

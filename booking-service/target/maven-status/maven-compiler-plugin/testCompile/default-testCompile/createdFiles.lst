@@ -1,0 +1,4 @@
+com\example\booking\BookingHttpIT.class
+com\example\booking\BookingServiceTests$WiremockInitializer.class
+com\example\booking\BookingServiceTests.class
+com\example\booking\BookingHttpIT$WiremockInitializer.class
